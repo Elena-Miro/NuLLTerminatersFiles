@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<Windows.h>
 using namespace std;
 bool dex(char str[]);
@@ -10,16 +10,16 @@ void main()
 	char str[n];
 	
 	cin.getline(str, n);
-	cout << "Ââåäèòå ñèìâîëû â ñòðîêó:" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ¸Ð¼Ð²Ð¾Ð»Ñ‹ Ð² ÑÑ‚Ñ€Ð¾ÐºÑƒ:" << endl;
 	cin >> str;
 	
 	if (dex(str)==true)
 	{
-		cout << "Ñòðîêà öåëîå äåñÿòè÷íîå ÷èñëî" << endl;
+		cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° Ñ†ÐµÐ»Ð¾Ðµ Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾" << endl;
 	}
 	else
 	{
-		cout << "Ñòðîêà íå öåëîå äåñÿòè÷íîå ÷èñëî" << endl;
+		cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° Ð½Ðµ Ñ†ÐµÐ»Ð¾Ðµ Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾" << endl;
 	}
 	
 }
