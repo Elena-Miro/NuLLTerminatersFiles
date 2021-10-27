@@ -4,6 +4,9 @@ using namespace std;
 bool dex(char str[]);
 bool bin(char str[]);
 bool hex(char str[]);
+bool int_dex(char str[]);
+
+
 void main()
 {
 
@@ -17,7 +20,7 @@ void main()
 	dex(str);
 	if (dex(str) == true)
 	{
-		cout << "Строка целое десятичное число" << endl;
+		cout << "Строка целое десятичное число"<< endl;
 	}
 	else
 	{
@@ -41,6 +44,21 @@ void main()
 	else
 	{
 		cout << "Строка не шестнадцатиричное число" << endl;
+	}
+	if (dex(str) == true)
+	{
+		int x;
+		for (int i = 0; str[i]; i++)
+		{
+			x = str[i] - 48;
+			printf("%d", str[i]);
+		}
+		cout << endl;
+	}
+	
+	else
+	{
+		cout << "Строка не десятичное число число" << endl;
 	}
 	
 }
@@ -71,3 +89,4 @@ bool hex(char str[])
 	}
 	return true;
 }
+
