@@ -50,7 +50,7 @@ void main()
 		int x;
 		for (int i = 0; str[i]; i++)
 		{
-			x = str[i] - 48;
+			x = str[i] - '0';
 			printf("%d", str[i]);
 		}
 		cout << endl;
