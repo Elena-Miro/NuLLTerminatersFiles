@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 #include<Windows.h>
 using namespace std;
 
@@ -15,35 +15,35 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 
-#ifdef LINE_SIZE // Подсчитать длину строки
+#ifdef LINE_SIZE // РџРѕРґСЃС‡РёС‚Р°С‚СЊ РґР»РёРЅСѓ СЃС‚СЂРѕРєРё
 	char* str = new char[255];
 	const int n = 256;
-	cout << "Введите строку:" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ:" << endl;
 	cin.getline(str, n);
-	cout << "Размер строки равен:" << strlen(str) << endl;
+	cout << "Р Р°Р·РјРµСЂ СЃС‚СЂРѕРєРё СЂР°РІРµРЅ:" << strlen(str) << endl;
 	delete[]str;
 #endif // LINE_SIZE
 
-#ifdef WORD_SIZE//Подсчитать количество слов в строке 
+#ifdef WORD_SIZE//РџРѕРґСЃС‡РёС‚Р°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃР»РѕРІ РІ СЃС‚СЂРѕРєРµ 
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	char* str = new char[255];
 	const int n = 256;
 
-	cout << "Введите строку:" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ:" << endl;
 	cin.get(str, n);
 	
 	word_number(str,n);
-	cout << "В вашей строке " << word_number(str, n) << " слов" << endl;
+	cout << "Р’ РІР°С€РµР№ СЃС‚СЂРѕРєРµ " << word_number(str, n) << " СЃР»РѕРІ" << endl;
 	delete[]str;
 
 #endif //WORD_SIZE
-#ifdef UPPER //Перевести строку в верхний регистр
+#ifdef UPPER //РџРµСЂРµРІРµСЃС‚Рё СЃС‚СЂРѕРєСѓ РІ РІРµСЂС…РЅРёР№ СЂРµРіРёСЃС‚СЂ
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	char* str = new char[255];
 	const int n = 256;
-	cout << "Введите строку:" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ:" << endl;
 	cin.get(str, n);
 	to_upper(str);
 	cout << str << endl;
@@ -55,7 +55,7 @@ int main()
 	SetConsoleOutputCP(1251);
 	char* str = new char[255];
 	const int n = 256;
-	cout << "Введите строку:" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ:" << endl;
 	cin.get(str, n);
 	to_down(str);
 	cout << str << endl;
@@ -83,7 +83,7 @@ void to_upper(char str[])
 	for (int i = 0; str[i]; i++)
 	{
 		if (str[i] >= 'a' && str[i] <= 'z' ||
-			str[i] >= 'а' && str[i] <= 'я')
+			str[i] >= 'Р°' && str[i] <= 'СЏ')
 
 			str[i] -= 32;
 	}
@@ -93,7 +93,7 @@ void to_down(char str[])
 	for (int i = 0; str[i]; i++)
 	{
 		if (str[i] >= 'A' && str[i] <= 'Z' ||
-			str[i] >= 'А' && str[i] <= 'Я')
+			str[i] >= 'Рђ' && str[i] <= 'РЇ')
 
 			str[i] += 32;
 	}
