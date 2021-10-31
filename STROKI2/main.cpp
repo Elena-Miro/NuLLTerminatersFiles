@@ -4,9 +4,9 @@ using namespace std;
 
 
 //#define LINE_SIZE
-//#define WORD_SIZE
+#define WORD_SIZE
 //#define UPPER
-#define DOWN
+//#define DOWN
 int word_number(char str[], int n);
 void to_upper(char str[]);
 void to_down(char str[]);
